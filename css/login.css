@@ -1,0 +1,97 @@
+#logo-image {
+    position: absolute;
+    width: 85px;
+    height: 79.59px;
+    left: 532px;
+    top: 151px;
+
+    background: url(image/로고3\ 2.png);
+}
+
+#login-header {
+    position: absolute;
+    width: 290px;
+    height: 113.78px;
+    left: 617px;
+    top: 134px;
+
+    background: url(image/logo\ 1.png);
+}
+
+#id-field {
+    box-sizing: border-box;
+    position: absolute;
+    width: 635px;
+    height: 54px;
+    left: 402px;
+    top: 306px;
+
+    background: #FFFFFF;
+    /* searchbar */
+
+    border: 0.5px solid #001F7B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+}
+
+#password-field {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 635px;
+    height: 54px;
+    left: 402px;
+    top: 424px;
+
+    background: #FFFFFF;
+    /* searchbar */
+
+    border: 0.5px solid #001F7B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+}
+
+#login-form-submit {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 635px;
+    height: 54px;
+    left: 402px;
+    top: 542px;
+    color: white;
+
+    background: #0035D3;
+    /* 로고 색상 */
+
+    border: 2px solid #0035D3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+}
+
+#check {
+    position: absolute;
+    width: 35px;
+    height: 44px;
+    left: 407px;
+    top: 603px;
+
+    background-image: url(image/image\ 2.png)
+}
+
+#check-on {
+    position: absolute;
+    width: 203px;
+    height: 23px;
+    left: 448px;
+    top: 614px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: rgba(0, 0, 0, 0.3);
+
+}
