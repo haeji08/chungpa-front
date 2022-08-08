@@ -1,424 +1,46 @@
-h1 a {
+body{
+    width: 1400px;
+    margin:0 auto;
+}
+
+.line{
+    border-bottom: 0.5px solid;
+    border-color: #c2c2c2;
+}
+
+h1 {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    margin: 100px;
     color: #0035D3;
 }
 
-.id label[for="id"] {
-    position: absolute;
-    width: 101px;
-    height: 44px;
-    left: 159px;
-    top: 333px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+.registration-container div{
     display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
     align-items: center;
-    text-align: center;
-
-    color: #000000;
+    margin: 30px;
 }
-
-.id #id {
+.registration-container input{
     box-sizing: border-box;
-
-    position: absolute;
     width: 859px;
     height: 44px;
-    left: 317px;
-    top: 333px;
-
     background: #FFFFFF;
-    /* searchbar */
-
     border: 0.5px solid #001F7B;
 }
 
-.password label[for="password"] {
-    position: absolute;
-    width: 106px;
-    height: 29px;
-    left: 154px;
-    top: 462px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-
-    display: flex;
+button{
+    display: block;
     align-items: center;
-    text-align: center;
-
-    color: #000000;
-}
-
-.password #password {
     box-sizing: border-box;
-
-    position: absolute;
-    width: 859px;
-    height: 44px;
-    left: 317px;
-    top: 455px;
-
-    background: #FFFFFF;
-    /* searchbar */
-
-    border: 0.5px solid #001F7B;
-}
-
-.check-password label[for="check-password"] {
-    position: absolute;
-    width: 172px;
-    height: 29px;
-    left: 130px;
-    top: 584px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-}
-
-.check-password #check-password {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 859px;
-    height: 44px;
-    left: 317px;
-    top: 577px;
-
-    background: #FFFFFF;
-    /* searchbar */
-
-    border: 0.5px solid #001F7B;
-}
-
-.username label[for="username"] {
-    position: absolute;
-    width: 62px;
-    height: 29px;
-    left: 176px;
-    top: 705px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-
-}
-
-.username #username {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 859px;
-    height: 44px;
-    left: 317px;
-    top: 690px;
-
-    background: #FFFFFF;
-    /* searchbar */
-
-    border: 0.5px solid #001F7B;
-}
-
-.birth label[for="birth"] {
-    position: absolute;
-    width: 117px;
-    height: 29px;
-    left: 158px;
-    top: 841px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-}
-
-.birth .radio label[for="solar"] {
-    position: absolute;
-    width: 56px;
-    height: 22px;
-    left: 391px;
-    top: 819px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-}
-
-.birth .radio #solar {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    left: 364px;
-    top: 819px;
-
-    background: #FFFFFF;
-    /* 로고 색상 */
-
-    border: 3px solid #0035D3;
-}
-
-.birth .radio label[for="lunar"] {
-    position: absolute;
-    width: 56px;
-    height: 22px;
-    left: 391px;
-    top: 859px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-}
-
-.birth .radio #lunar {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    left: 364px;
-    top: 859px;
-
-    background: #FFFFFF;
-    /* 로고 색상 */
-
-    border: 3px solid #0035D3;
-}
-
-.birth #year {
-    position: absolute;
-    width: 154px;
-    height: 44px;
-    left: 534px;
-    top: 828px;
-
-    filter: drop-shadow(-2px 4px 15px rgba(0, 7, 69, 0.15));
-}
-
-.birth #month {
-    position: absolute;
-    width: 154px;
-    height: 44px;
-    left: 753px;
-    top: 831px;
-
-    filter: drop-shadow(-2px 4px 15px rgba(0, 7, 69, 0.15));
-}
-
-.birth #day {
-    position: absolute;
-    width: 154px;
-    height: 44px;
-    left: 980px;
-    top: 827px;
-
-    filter: drop-shadow(-2px 4px 15px rgba(0, 7, 69, 0.15));
-}
-
-.phone-number label[for="phone-number"] {
-    position: absolute;
-    width: 154px;
-    height: 29px;
-    left: 140px;
-    top: 974px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-}
-
-.phone-number #phone-number {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 859px;
-    height: 44px;
-    left: 317px;
-    top: 963px;
-
-    background: #FFFFFF;
-    /* searchbar */
-
-    border: 0.5px solid #001F7B;
-}
-
-.verification-code label[for="verification-code"] {
-    position: absolute;
-    width: 117px;
-    height: 29px;
-    left: 153px;
-    top: 1062px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-
-}
-
-.verification-code #verification-code {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 859px;
-    height: 44px;
-    left: 317px;
-    top: 1055px;
-
-    background: #FFFFFF;
-    /* searchbar */
-
-    border: 0.5px solid #001F7B;
-}
-
-.email-address label[for="email"] {
-    position: absolute;
-    width: 89px;
-    height: 29px;
-    left: 167px;
-    top: 1196px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-}
-
-.email-address #email-address {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 278px;
-    height: 44px;
-    left: 317px;
-    top: 1187px;
-
-    background: #FFFFFF;
-    /* searchbar */
-
-    border: 0.5px solid #001F7B;
-}
-
-.email-address label[for="@"] {
-    position: absolute;
-    width: 36px;
-    height: 37px;
-    left: 612px;
-    top: 1191px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-}
-
-.email-address #email {
-    position: absolute;
-    width: 230px;
-    height: 44px;
-    left: 664px;
-    top: 1187px;
-
-    filter: drop-shadow(-2px 4px 15px rgba(0, 7, 69, 0.15));
-}
-
-#registration {
-    box-sizing: border-box;
-
-    position: absolute;
     width: 635px;
     height: 54px;
-    left: 399px;
-    top: 1343px;
-    color: white;
-
+    color:#FFFFFF;
+    font-size: 24px;
     background: #0035D3;
-    /* 로고 색상 */
-
     border: 2px solid #0035D3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 17px;
-
 }
