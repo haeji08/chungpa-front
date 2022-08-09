@@ -1,0 +1,169 @@
+a {
+  text-decoration-line: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+body {
+  width: 1400px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.line {
+  border-bottom: 0.5px solid;
+  border-color: black;
+}
+
+#line1 {
+  border-color: #c2c2c2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.header h1 a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0035d3;
+}
+
+.header .search-box {
+  position: relative;
+  width: 635px;
+  height: 44px;
+}
+
+.header .search-box .icon {
+  position: absolute;
+  top: 13px;
+  right: 14px;
+}
+
+.header .search-box input {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #001f7b;
+  border-radius: 38px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.login #login {
+  border-right: 1px solid black;
+  padding: 0 12px 0 8px;
+}
+
+.login #join {
+  padding: 0 0 0 12px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.nav a:hover {
+  color: #0035d3;
+}
+
+.category-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.category-vector div {
+  width: 20px;
+  border-bottom: 2px solid;
+  padding-bottom: 4px;
+  margin-right: 10px;
+}
+
+.body-header {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px 0 0 0;
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.select-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.select-box select {
+  width: 141.87px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 16px;
+  filter: drop-shadow(-2px 4px 15px rgba(0, 7, 69, 0.15));
+  border: 0.1px solid #001f7b;
+  border-radius: 4px;
+  padding: 0 6px;
+  margin: 5px 0 36px 0;
+}
+
+.content {
+  border: 1px solid #cccccc;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  padding: 20px 0 20px 20px;
+  margin: 0 0 33px 0;
+}
+
+.content .item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  font-size: 23px;
+  margin: 0 510px 0 28px;
+}
+
+.content .deal-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 28px;
+  color: #0035d3;
+}
+
+.content .deal-status button {
+  width: 143px;
+  height: 49px;
+  border: 0.5px solid rgba(0, 0, 0, 0.92);
+  border-radius: 14px;
+  background-color: white;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 10px 0 0 0;
+}
