@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>로그인</title>
+</head>
+<body>
+    <p>
+        <h1 id="logo-image"></h1>
+        <h1 id="login-header"></h1>
+    </p>
+
+    <!-- <div id="login-error-msg-holder">
+        <p id="login-error-msg">잘못된 아이디
+            <span id="error-msg-second-line">비밀번호입니다.</span>
+        </p>
+    </div> -->
+
+    <form id="login-form">
+        <p><input type="text" name="id" id="id-field" class="login-form-field" placeholder="아이디"></p>
+        <p><input type="password" name="password" id="password-field" class="login-form-field" placeholder="비밀번호"></p>
+        <p><input type="submit" value="로그인" id="login-form-submit"></p>
+    </form>
+    
+    <div class="checkbox">
+        <input type="checkbox" name="check" id="check" class="checkbox">
+        <label for="check" id="check-on">로그인 상태 유지</label>
+    </div>
+</body>
+</html>
