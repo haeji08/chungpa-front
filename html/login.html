@@ -7,10 +7,12 @@
     <title>로그인</title>
 </head>
 <body>
-    <p>
-        <h1 id="logo-image"></h1>
-        <h1 id="login-header"></h1>
-    </p>
+    <h1>
+        <a href="">
+            <img src="image/로고3 2.png" 
+            width="90px" height="84.28px" alt="로고이미지">청파마켓
+        </a>
+    </h1>
 
     <!-- <div id="login-error-msg-holder">
         <p id="login-error-msg">잘못된 아이디
@@ -18,15 +20,41 @@
         </p>
     </div> -->
 
-    <form id="login-form">
-        <p><input type="text" name="id" id="id-field" class="login-form-field" placeholder="아이디"></p>
-        <p><input type="password" name="password" id="password-field" class="login-form-field" placeholder="비밀번호"></p>
-        <p><input type="submit" value="로그인" id="login-form-submit"></p>
+    <form action ="">
+        <div class="login-container">
+            <div class="id-field">
+                <input type="text" name="id-field" id="id-field" placeholder="아이디">
+            </div>
+
+            <div class="password-field">
+                <input type="password" name="password-field" id="password-field" placeholder="비밀번호">
+            </div>
+
+            <div class="btn-container">
+                <button type="submit">로그인</button>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">로그인 상태 유지</label>
+            </div>
+
+            <div class="line" id="line"></div>
+        </div>
     </form>
-    
-    <div class="checkbox">
-        <input type="checkbox" name="check" id="check" class="checkbox">
-        <label for="check" id="check-on">로그인 상태 유지</label>
-    </div>
+
+    <nav class="option-list">
+        <ul class="nav">
+            <li>
+                <a href="">아이디 찾기</a>
+            </li>
+            <li>
+                <a href="">비밀번호 찾기</a>
+            </li>
+            <li>
+                <a href="">회원가입</a>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>
