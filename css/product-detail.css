@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'PyeongChangPeace-Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2')
+    format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumGothic';
+  src: url(NanumFont_TTF_ALL/NanumGothic.ttf) format('truetype');
+}
+
 a {
   text-decoration-line: none;
   color: black;
@@ -11,6 +24,13 @@ ul {
 body {
   width: 1400px;
   margin: 0 auto;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: NanumGothic;
+}
+
+button {
+  cursor: pointer;
 }
 
 .line {
@@ -28,11 +48,21 @@ body {
   align-items: center;
 }
 
+.header h1 {
+  font-family: 'PyeongChangPeace-Light';
+  font-weight: 1000;
+  font-size: 45px;
+}
+
 .header h1 a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #0035d3;
+}
+
+.header h1 a img {
+  padding-right: 10px;
 }
 
 .header .search-box {
@@ -43,8 +73,8 @@ body {
 
 .header .search-box .icon {
   position: absolute;
-  top: 13px;
-  right: 14px;
+  top: 12px;
+  right: -4px;
 }
 
 .header .search-box input {
@@ -52,6 +82,10 @@ body {
   height: 100%;
   border: 2px solid #001f7b;
   border-radius: 38px;
+  padding: 0 0 0 25px;
+  font-weight: 520;
+  font-size: 16px;
+  font-family: NanumGothic;
 }
 
 .login {
@@ -89,6 +123,10 @@ body {
   border-bottom: 2px solid;
   padding-bottom: 4px;
   margin-right: 10px;
+}
+
+.selected {
+  margin: 32px 0;
 }
 
 .selector-wrapper {
@@ -193,11 +231,11 @@ td {
 }
 
 .btn-container {
-  width: 300px;
+  width: 350px;
 }
 .btn-container ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
   padding-inline-start: 0;
 }
