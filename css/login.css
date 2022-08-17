@@ -1,9 +1,21 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@font-face {
+    font-family: 'PyeongChangPeace-Light';
+    src: url('../font/PyeongChangPeace-Light.woff') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('../font/NanumGothic.ttf') format('truetype');
+}
 
 body {
     width: 635px;
     margin: 0 auto;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'NanumGothic';
 }
 
 h1 {
@@ -11,7 +23,14 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     margin: 134px;
+    font-family: 'PyeongChangPeace-Light';
+    font-weight: 1000;
+    font-size: 45px;
     color: #0035D3;
+}
+
+h1 a img{
+    padding-right: 10px;
 }
 
 .id-field input, .password-field input{
@@ -37,7 +56,26 @@ h1 {
 
 .login-container .checkbox{
     width: 250px;
-    margin: 18px;  
+    margin: 10px 0 0 10px;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+input[type=checkbox]+label {
+    cursor: pointer;
+    padding-left: 23px;
+    background-repeat: no-repeat;
+    background-image: url('../image/check_off.png');
+}
+
+input[type=checkbox]:checked+label {
+    background-image: url('../image/check_on.png');
+}
+
+input[type=checkbox]:disabled+label {
+    background-image: url('../image/check_off.png');
 }
 
 .login-container .btn-container {
@@ -69,7 +107,8 @@ button{
 .option-list ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    margin-left: -30px;
+    justify-content: space-evenly;
     font-size: 20px;
 }
 .option-list a{
