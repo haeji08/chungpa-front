@@ -18,19 +18,16 @@ body {
     font-family: 'NanumGothic';
 }
 
-h1 {
+h1 a {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     margin: 134px;
+    justify-content: space-evenly;
+    align-items: flex-end;
     font-family: 'PyeongChangPeace-Light';
+    text-decoration-line: none;
     font-weight: 1000;
-    font-size: 45px;
+    font-size: 60px;
     color: #0035D3;
-}
-
-h1 a img{
-    padding-right: 10px;
 }
 
 .id-field input, .password-field input{
@@ -112,7 +109,9 @@ button{
     font-size: 20px;
 }
 .option-list a{
-    color: rgba(0, 0, 0, 0.19);
+    text-decoration-line: none;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.3);
 }
 .option-list a:hover {
     color: #0035d3;
