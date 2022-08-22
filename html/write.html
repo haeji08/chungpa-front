@@ -59,14 +59,13 @@
       <div class="line" id="line1"></div>
     </div>
     <main>
-      <form action="">
-        <div class="type-container">
-              <button type="button">팔아요</button>
-              <button type="button">살래요</button>
-              <button type="button">나눠요</button>
-        </div> 
-        
+      <form action="">        
         <div class="info-container">
+              <div class="type-container">
+                  <button type="button">팔아요</button>
+                  <button type="button">살래요</button>
+                  <button type="button">나눠요</button>
+              </div> 
               <div class="title">
                   <label for="title">제목</label>
                   <input type="text" name="title" id="title">
@@ -75,13 +74,14 @@
               <div class="name">
                   <label for="name">상품명</label>
                   <input type="text" name="name" id="name">
+              </div>
 
+              <div class="category">
                   <select  name="category" id="category">
                       <option value="카테고리">카테고리</option>
                   </select>
-
-                  <input type="text" name="price" id="price">
-
+                  <input type="text" name="price" id="price"
+                  placeholder="   희망 가격(선택 사항)">
                   <div class="checkbox">
                       <input type="checkbox" name="checkbox" id="checkbox">
                       <label for="checkbox">가격 제안 받기</label>
@@ -99,12 +99,15 @@
 
               <div class="image">
                   <label for="image">상품 이미지</label>
-                  <input type="image" name="image" id="image">
+                  <div></div>
+                  <input type="image" name="image" id="image"
+                  src="../image/Camera.png" width="50px" height="50px">
               </div>
 
               <div class="line" id="line4"></div>
 
               <div class="transaction-way">
+                  <label for="">희망 거래 방식</label> 
                   <div class="direct">
                       <input type="radio" name="gener" id="direct">
                       <label for="direct">직거래</label>
@@ -122,6 +125,7 @@
               </div>
 
               <div class="transaction-area">
+                  <label for="area">거래 가능 지역</label>
                   <select name="area" id="area">
                       <option value="지역 선택">지역 선택</option>
                   </select>

@@ -34,11 +34,7 @@ button {
 
 .line {
     border-bottom: 0.5px solid;
-    border-color: black;
-}
-
-#line1 {
-    border-color: #c2c2c2;
+    border-color: #c2c2c2;;
 }
 
 .header {
@@ -126,28 +122,103 @@ button {
 
 .type-container button{
     border-radius: 17px;
-    font-size: 28px;
-    margin: 45px 10px 20px 20px;
 }
 
 .info-container div{
     display: flex;
-    width: 1200px;
     flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    margin: 30px;
+    justify-content: space-evenly;
+    margin: 50px;
 }
 
-.info-container input[type=text] {
+.title input, .name input, .hashtag input{
     box-sizing: border-box;
-    width: 1000px;
+    width: 859px;
     height: 44px;
     background: #FFFFFF;
     border: 0.5px solid #001F7B;
 }
 
+.info-container .description input{
+    box-sizing: border-box;
+    width: 859px;
+    height: 537px;
+    background: #FFFFFF;
+    border: 0.5px solid #001F7B;
+}
+
 select {
-    filter: drop-shadow(-2px 4px 15px rgba(0, 7, 69, 0.15));
+    width: 210px;
     height: 44px;
+    filter: drop-shadow(-2px 4px 15px rgba(0, 7, 69, 0.15));
+}
+
+.info-container .category{
+    position: relative;
+    margin-left: 225px;
+}
+
+.category input[type=text]{
+    box-sizing: border-box;
+    width: 650px;
+    height: 45.29px;
+    background: #FFFFFF;
+    border: 0.5px solid #001F7B;
+    margin-left: 40px;
+}
+
+.category .checkbox{ 
+    width: 159.56px;
+    height: 38.09px;
+}
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+input[type=checkbox]+label {
+    cursor: pointer;
+    padding-left: 23px;
+    background-repeat: no-repeat;
+    background-image: url('../image/check_off.png');
+}
+
+input[type=checkbox]:checked+label {
+    background-image: url('../image/check_on.png');
+}
+
+input[type=checkbox]:disabled+label {
+    background-image: url('../image/check_off.png');
+}
+
+.image div{
+    box-sizing: border-box;
+    width: 260px;
+    height: 260px;
+    background: #F5F5F5;
+    border: 0.5px solid #8D8D8D;
+}
+
+.image input{
+    position: absolute;
+}
+
+.info-container .btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 90px 0 90px 0;
+}
+
+.btn-container button{
+    display: block;
+    align-items: center;
+    box-sizing: border-box;
+    width: 135px;
+    height: 61.36px;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 700;
+    background: #0035D3;
+    border: 2px solid #0035D3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
 }
