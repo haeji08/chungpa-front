@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/write.css" />
+    <title>글 작성 페이지</title>
+</head>
+<body>
+    <header class="header">
+      <h1>
+        <a href="">
+            <img src="../image/로고3 2.png" width="66" 
+            height="60" alt="로고이미지"/>청파마켓</a>
+      </h1>
+      <div class="search-box">
+        <input type="text" />
+        <a href="" class="icon">
+          <img src="../image/Search_Magnifying_Glass.png" alt="검색 버튼 아이콘" />
+        </a>
+      </div>
+      <div class="login">
+        <a href="">
+          <img src="../image/Chat_Circle.png" width="43px"
+            height="40px" alt="채팅 아이콘"/>
+        </a>
+        <a href="">
+          <img src="../image/User_03.png" width="58px"
+            height="54px" alt="내 정보 아이콘"/>
+        </a>
+        <a href="" id="login">로그인</a>
+        <a href="" id="join">회원가입</a>
+      </div>
+    </header>
+    <div>
+      <nav>
+        <ul class="nav">
+          <li>
+            <a class="category-container" href="">
+              <div class="category-vector">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              카테고리
+            </a>
+          </li>
+          <li>
+            <a href="">팔아요</a>
+          </li>
+          <li>
+            <a href="">살래요</a>
+          </li>
+          <li>
+            <a href="">나눠요</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="line" id="line1"></div>
+    </div>
+    <main>
+      <form action="">
+        <div class="type-container">
+              <button type="button">팔아요</button>
+              <button type="button">살래요</button>
+              <button type="button">나눠요</button>
+        </div> 
+        
+        <div class="info-container">
+              <div class="title">
+                  <label for="title">제목</label>
+                  <input type="text" name="title" id="title">
+              </div>
+
+              <div class="name">
+                  <label for="name">상품명</label>
+                  <input type="text" name="name" id="name">
+
+                  <select  name="category" id="category">
+                      <option value="카테고리">카테고리</option>
+                  </select>
+
+                  <input type="text" name="price" id="price">
+
+                  <div class="checkbox">
+                      <input type="checkbox" name="checkbox" id="checkbox">
+                      <label for="checkbox">가격 제안 받기</label>
+                  </div>
+              </div>
+
+              <div class="line" id="line2"></div>
+
+              <div class="description">
+                  <label for="description">상품 설명</label>
+                  <input type="text" name="description" id="description">
+              </div>
+
+              <div class="line" id="line3"></div>
+
+              <div class="image">
+                  <label for="image">상품 이미지</label>
+                  <input type="image" name="image" id="image">
+              </div>
+
+              <div class="line" id="line4"></div>
+
+              <div class="transaction-way">
+                  <div class="direct">
+                      <input type="radio" name="gener" id="direct">
+                      <label for="direct">직거래</label>
+                  </div>
+
+                  <div class="deliver">
+                      <input type="radio" name="gener" id="deliver">
+                      <label for="deliver">택배 거래</label>
+                  </div>
+
+                  <div class="locker">
+                      <input type="radio" name="gener" id="locker">
+                      <label for="locker">사물함 거래</label>
+                  </div>
+              </div>
+
+              <div class="transaction-area">
+                  <select name="area" id="area">
+                      <option value="지역 선택">지역 선택</option>
+                  </select>
+              </div>
+
+              <div class="hashtag">
+                  <label for="hashtag">연관태그</label>
+                  <input type="text" name="hashtag" id="hashtag">
+              </div>
+
+              <div class="btn-container">
+                  <button type="submit">등록</button>
+              </div>
+        </div>
+      </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'PyeongChangPeace-Light';
+    src: url('../font/PyeongChangPeace-Light.woff') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('../font/NanumGothic.ttf') format('truetype');
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'NanumGothic';
+}
+
+button {
+    cursor: pointer;
+}
+
+.line {
+    border-bottom: 0.5px solid;
+    border-color: black;
+}
+
+#line1 {
+    border-color: #c2c2c2;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-family: 'PyeongChangPeace-Light';
+    font-weight: 1000;
+    font-size: 45px;
+}
+
+.header h1 a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0035d3;
+}
+
+.header h1 a img {
+    padding-right: 10px;
+}
+
+.header .search-box {
+    position: relative;
+    width: 635px;
+    height: 44px;
+}
+
+.header .search-box .icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.header .search-box input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #001f7b;
+    border-radius: 38px;
+    padding: 0 0 0 25px;
+    font-weight: 520;
+    font-size: 16px;
+    font-family: 'NanumGothic';
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.login #login {
+    border-right: 1px solid black;
+    padding: 0 12px 0 8px;
+}
+
+.login #join {
+    padding: 0 0 0 12px;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    color: #0035d3;
+}
+
+.category-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.category-vector div {
+    width: 20px;
+    border-bottom: 2px solid;
+    padding-bottom: 4px;
+    margin-right: 10px;
+}
+
+.type-container button{
+    border-radius: 17px;
+    font-size: 28px;
+    margin: 45px 10px 20px 20px;
+}
+
+.info-container div{
+    display: flex;
+    width: 1200px;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.info-container input[type=text] {
+    box-sizing: border-box;
+    width: 1000px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 0.5px solid #001F7B;
+}
+
+select {
+    filter: drop-shadow(-2px 4px 15px rgba(0, 7, 69, 0.15));
+    height: 44px;
+}

@@ -96,9 +96,12 @@ button{
 }
 
 .line{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.line #line1{
     width: 635px;
     height: 0px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .option-list ul{
@@ -108,12 +111,20 @@ button{
     justify-content: space-evenly;
     font-size: 20px;
 }
+
 .option-list a{
     text-decoration-line: none;
     font-size: 18px;
+    font-weight: 600;
     color: rgba(0, 0, 0, 0.3);
 }
+
 .option-list a:hover {
     color: #0035d3;
 }
 
+#line2, #line3{
+    width: 0px;
+    height: 22px;
+    border-left: 1px thick solid rgba(0, 0, 0, 0.3);
+}
