@@ -22,16 +22,11 @@ ul {
 }
 
 body {
-  width: 1400px;
+  width: 1120px;
   margin: 0 auto;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 100;
+  font-size: 13px;
   font-family: NanumGothic;
-}
-
-main {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 button {
@@ -56,7 +51,7 @@ button {
 .header h1 {
   font-family: 'PyeongChangPeace-Light';
   font-weight: 1000;
-  font-size: 45px;
+  font-size: 36px;
 }
 
 .header h1 a {
@@ -72,14 +67,14 @@ button {
 
 .header .search-box {
   position: relative;
-  width: 635px;
-  height: 44px;
+  width: 510px;
+  height: 35px;
 }
 
 .header .search-box .icon {
   position: absolute;
-  top: 12px;
-  right: -4px;
+  top: 10px;
+  right: -7px;
 }
 
 .header .search-box input {
@@ -89,7 +84,7 @@ button {
   border-radius: 38px;
   padding: 0 0 0 25px;
   font-weight: 520;
-  font-size: 16px;
+  font-size: 13px;
   font-family: NanumGothic;
 }
 
@@ -111,11 +106,59 @@ button {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 17px;
+  margin: 7px 0px;
 }
 
-.nav a:hover {
+.nav > li {
+  position: relative;
+  line-height: 50px;
+}
+
+.nav > li > a:hover {
   color: #0035d3;
+}
+
+.category,
+.submenu {
+  width: 208px;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 3px 3px 13px 1px rgba(75, 75, 75, 0.15);
+}
+
+.submenu {
+  top: 0px;
+  left: 208px;
+  z-index: 3;
+}
+
+.category > li,
+.submenu > li {
+  line-height: 30px;
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.category a {
+  display: block;
+}
+
+.nav > li:hover .category {
+  display: block;
+}
+
+.category > li:hover .submenu {
+  display: block;
+}
+
+.category li:hover {
+  background: #e6e6e6;
 }
 
 .category-container {
@@ -131,13 +174,13 @@ button {
 }
 
 .body-header {
-  width: 250px;
+  width: 218px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 70px 0 0 0;
+  margin: 60px 0 0 0;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 33px;
 }
 
 .select-box {
@@ -146,13 +189,13 @@ button {
 }
 
 .select-box select {
-  width: 141.87px;
-  height: 42px;
+  width: 120px;
+  height: 35px;
   font-weight: 600;
-  font-size: 16px;
-  filter: drop-shadow(-2px 4px 15px rgba(0, 7, 69, 0.15));
-  border: 0.1px solid #001f7b;
+  font-size: 13px;
+  box-shadow: 3px 3px 13px 2px rgba(59, 59, 59, 0.15);
   border-radius: 4px;
+  border-style: none;
   padding: 0 6px;
   margin: 5px 0 36px 0;
 }
@@ -171,8 +214,8 @@ button {
   flex-direction: column;
   align-items: center;
   font-weight: 400;
-  font-size: 23px;
-  margin: 0 510px 0 28px;
+  font-size: 20px;
+  margin: 0 510px 0 35px;
 }
 
 .content .deal-status {
@@ -180,17 +223,17 @@ button {
   flex-direction: column;
   align-items: center;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
   color: #0035d3;
 }
 
 .content .deal-status button {
-  width: 143px;
-  height: 49px;
+  width: 115px;
+  height: 39px;
   border: 0.5px solid rgba(0, 0, 0, 0.92);
   border-radius: 14px;
   background-color: white;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   margin: 10px 0 0 0;
 }

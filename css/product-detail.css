@@ -22,10 +22,10 @@ ul {
 }
 
 body {
-  width: 1400px;
+  width: 1120px;
   margin: 0 auto;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 100;
+  font-size: 13px;
   font-family: NanumGothic;
 }
 
@@ -51,7 +51,7 @@ button {
 .header h1 {
   font-family: 'PyeongChangPeace-Light';
   font-weight: 1000;
-  font-size: 45px;
+  font-size: 36px;
 }
 
 .header h1 a {
@@ -67,14 +67,14 @@ button {
 
 .header .search-box {
   position: relative;
-  width: 635px;
-  height: 44px;
+  width: 510px;
+  height: 35px;
 }
 
 .header .search-box .icon {
   position: absolute;
-  top: 12px;
-  right: -4px;
+  top: 10px;
+  right: -7px;
 }
 
 .header .search-box input {
@@ -84,7 +84,7 @@ button {
   border-radius: 38px;
   padding: 0 0 0 25px;
   font-weight: 520;
-  font-size: 16px;
+  font-size: 13px;
   font-family: NanumGothic;
 }
 
@@ -106,11 +106,59 @@ button {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 17px;
+  margin: 7px 0px;
 }
 
-.nav a:hover {
+.nav > li {
+  position: relative;
+  line-height: 50px;
+}
+
+.nav > li > a:hover {
   color: #0035d3;
+}
+
+.category,
+.submenu {
+  width: 208px;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 3px 3px 13px 1px rgba(75, 75, 75, 0.15);
+}
+
+.submenu {
+  top: 0px;
+  left: 208px;
+  z-index: 3;
+}
+
+.category > li,
+.submenu > li {
+  line-height: 30px;
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.category a {
+  display: block;
+}
+
+.nav > li:hover .category {
+  display: block;
+}
+
+.category > li:hover .submenu {
+  display: block;
+}
+
+.category li:hover {
+  background: #e6e6e6;
 }
 
 .category-container {
@@ -126,11 +174,11 @@ button {
 }
 
 .selected {
-  margin: 32px 0;
+  margin: 30px 0;
 }
 
 .selector-wrapper {
-  margin: 20px 50px;
+  margin: 10px 50px;
 }
 
 .selector-wrapper .label {
@@ -166,7 +214,7 @@ button {
 
 .sell-info-container {
   display: block;
-  margin-top: 42px;
+  margin-top: 32px;
 }
 
 .sell-info-container .img-area {
@@ -183,12 +231,12 @@ button {
 .sell-info-container .product-header h2 {
   margin-block-start: 6px;
   margin-block-end: 7px;
-  font-size: 34px;
+  font-size: 25px;
   font-weight: 600;
 }
 
 .sell-info-container .product-header span {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -196,7 +244,7 @@ button {
 td {
   text-align: left;
   padding: 10px 10px 10px 0px;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .sell-info-container table th {
@@ -205,34 +253,36 @@ td {
 
 .sell-info-container .detail-area #line2 {
   border-bottom: 1px solid #dddddd;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 18px 0;
 }
 
 .post-info-icon-container {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 #post-info-icon-container {
-  width: 235px;
-  margin: 10px 0;
+  width: 205px;
+  margin: 4px 0;
 }
 
 .post-info-icon-container .icon {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .post-info-icon-container div span {
-  font-size: 13px;
+  font-size: 11px;
   color: #cccccc;
-  padding-left: 5px;
+  padding-left: 3px;
 }
 
 .btn-container {
-  width: 350px;
+  width: 310px;
 }
+
 .btn-container ul {
   display: flex;
   justify-content: space-between;
@@ -254,10 +304,10 @@ td {
 }
 
 .product-detail .header {
-  width: 445px;
-  height: 80px;
-  font-size: 22px;
-  font-weight: 600;
+  width: 330px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,16 +319,17 @@ td {
 .product-detail .product-detail-area {
   margin-top: 20px;
   float: left;
-  width: 69%;
+  width: 70%;
 }
 
 .product-detail .product-detail-area p {
-  font-size: 22px;
+  font-size: 16px;
+  font-weight: 100;
 }
 
 .product-detail .seller-info-area {
   float: right;
-  width: 30%;
+  width: 29%;
 }
 
 .product-detail #seller-info-area {
@@ -290,7 +341,7 @@ td {
 
 .product-detail .seller-info-area #profile {
   width: 60%;
-  margin: 30px auto;
+  margin: 20px auto;
   margin-bottom: 0;
 }
 
@@ -302,12 +353,10 @@ td {
 
 .product-detail .seller-info-area .profile .detail {
   text-align: center;
-  font-size: 16px;
-  font-weight: 300;
 }
 
 .product-detail .seller-info-area .profile .detail .name {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
 }
@@ -322,6 +371,12 @@ td {
   margin: 30px 0;
 }
 
+.seller-detail-container th,
+.seller-detail-container td,
+.deal-review-header div {
+  font-size: 15px;
+}
+
 .product-detail .seller-info-area .seller-detail-container tr td {
   padding-left: 30px;
 }
@@ -334,22 +389,34 @@ td {
 .reviewers .reviewer-profile {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   margin-bottom: 9px;
 }
 
 .reviewers ul {
   margin-block-start: 30px;
   margin-block-end: 30px;
+  margin: 20px 0 30px 0;
 }
 
 .reviewers .reviewer-profile .profile-detail {
-  padding-left: 15px;
+  padding-left: 10px;
+}
+
+.reviewers .reviewer-profile .reviewer-name {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.reviewers .reviewer-profile .reviewer-major {
+  font-size: 10px;
+  color: #aaaaaa;
 }
 
 .other-products-container .header {
-  margin: 50px 0 40px 0;
-  font-weight: 540;
-  font-size: 22px;
+  margin: 50px 0 30px 0;
+  font-weight: 500;
+  font-size: 20px;
 }
 .other-products-container .other-products ul {
   display: flex;
