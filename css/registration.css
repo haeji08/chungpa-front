@@ -119,3 +119,25 @@ button{
     justify-content: center;
     margin: 90px 0 90px 0;
 }
+
+input[type="checkbox"] {
+    display: none;
+    width: 159.56px;
+    height: 38.09px;
+    margin-top: -25px;
+}
+
+input[type=checkbox]+label {
+    cursor: pointer;
+    padding-left: 23px;
+    background-repeat: no-repeat;
+    background-image: url('../image/check_off.png');
+}
+
+input[type=checkbox]:checked+label {
+    background-image: url('../image/check_on.png');
+}
+
+input[type=checkbox]:disabled+label {
+    background-image: url('../image/check_off.png');
+}
