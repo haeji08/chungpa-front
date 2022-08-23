@@ -22,10 +22,10 @@ ul {
 }
 
 body {
-  width: 1400px;
+  width: 1120px;
   margin: 0 auto;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 100;
+  font-size: 13px;
   font-family: NanumGothic;
 }
 
@@ -51,7 +51,7 @@ button {
 .header h1 {
   font-family: 'PyeongChangPeace-Light';
   font-weight: 1000;
-  font-size: 45px;
+  font-size: 36px;
 }
 
 .header h1 a {
@@ -67,14 +67,14 @@ button {
 
 .header .search-box {
   position: relative;
-  width: 635px;
-  height: 44px;
+  width: 510px;
+  height: 35px;
 }
 
 .header .search-box .icon {
   position: absolute;
-  top: 12px;
-  right: -4px;
+  top: 10px;
+  right: -7px;
 }
 
 .header .search-box input {
@@ -84,7 +84,7 @@ button {
   border-radius: 38px;
   padding: 0 0 0 25px;
   font-weight: 520;
-  font-size: 16px;
+  font-size: 13px;
   font-family: NanumGothic;
 }
 
@@ -106,11 +106,59 @@ button {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 17px;
+  margin: 7px 0px;
 }
 
-.nav a:hover {
+.nav > li {
+  position: relative;
+  line-height: 50px;
+}
+
+.nav > li > a:hover {
   color: #0035d3;
+}
+
+.category,
+.submenu {
+  width: 208px;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 3px 3px 13px 1px rgba(75, 75, 75, 0.15);
+}
+
+.submenu {
+  top: 0px;
+  left: 208px;
+  z-index: 3;
+}
+
+.category > li,
+.submenu > li {
+  line-height: 30px;
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.category a {
+  display: block;
+}
+
+.nav > li:hover .category {
+  display: block;
+}
+
+.category > li:hover .submenu {
+  display: block;
+}
+
+.category li:hover {
+  background: #e6e6e6;
 }
 
 .category-container {
@@ -131,7 +179,7 @@ button {
 
 .txt-area #name {
   font-weight: 800;
-  font-size: 36px;
+  font-size: 33px;
   margin: 30px 0 0 0;
 }
 
@@ -151,14 +199,14 @@ button {
 
 .my-info-container .deal-info-container .reliability {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   align-items: center;
 }
 
 .my-info-container .deal-info-container .count {
   font-weight: 800;
-  font-size: 36px;
+  font-size: 32px;
   margin: 0 0 0 20px;
 }
 
@@ -183,7 +231,7 @@ button {
   height: 80px;
   display: flex;
   flex-wrap: wrap;
-  margin: 52px 0 60px 0;
+  margin: 32px 0 40px 0;
 }
 
 .my-info-container .deal-info-a-tags .item {
@@ -191,10 +239,10 @@ button {
 }
 
 .btn-container button {
-  width: 164px;
-  height: 48px;
-  font-weight: 600;
-  font-size: 20px;
+  width: 142px;
+  height: 42px;
+  font-weight: 550;
+  font-size: 17px;
   color: white;
   background-color: #3b42fc;
   border-radius: 10px;
