@@ -22,10 +22,10 @@ ul {
 }
 
 body {
-  width: 1400px;
+  width: 1120px;
   margin: 0 auto;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 100;
+  font-size: 13px;
   font-family: NanumGothic;
 }
 
@@ -51,7 +51,7 @@ button {
 .header h1 {
   font-family: 'PyeongChangPeace-Light';
   font-weight: 1000;
-  font-size: 45px;
+  font-size: 36px;
 }
 
 .header h1 a {
@@ -67,14 +67,14 @@ button {
 
 .header .search-box {
   position: relative;
-  width: 635px;
-  height: 44px;
+  width: 510px;
+  height: 35px;
 }
 
 .header .search-box .icon {
   position: absolute;
-  top: 12px;
-  right: -4px;
+  top: 10px;
+  right: -7px;
 }
 
 .header .search-box input {
@@ -84,7 +84,7 @@ button {
   border-radius: 38px;
   padding: 0 0 0 25px;
   font-weight: 520;
-  font-size: 16px;
+  font-size: 13px;
   font-family: NanumGothic;
 }
 
@@ -106,11 +106,59 @@ button {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 17px;
+  margin: 7px 0px;
 }
 
-.nav a:hover {
+.nav > li {
+  position: relative;
+  line-height: 50px;
+}
+
+.nav > li > a:hover {
   color: #0035d3;
+}
+
+.category,
+.submenu {
+  width: 208px;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 3px 3px 13px 1px rgba(75, 75, 75, 0.15);
+}
+
+.submenu {
+  top: 0px;
+  left: 208px;
+  z-index: 3;
+}
+
+.category > li,
+.submenu > li {
+  line-height: 30px;
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.category a {
+  display: block;
+}
+
+.nav > li:hover .category {
+  display: block;
+}
+
+.category > li:hover .submenu {
+  display: block;
+}
+
+.category li:hover {
+  background: #e6e6e6;
 }
 
 .category-container {
@@ -126,30 +174,30 @@ button {
 }
 
 .body-header {
-  width: 205px;
+  width: 182px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 70px 0 0 34.988px;
+  margin: 70px 0 0 28px;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 33px;
 }
 
 .delete-btn {
   display: flex;
   justify-content: flex-end;
-  margin: 10px 34.988px 0 0;
+  margin: 10px 12px 0 0;
 }
 
 .delete-btn button {
-  width: 93px;
-  height: 40px;
+  width: 75px;
+  height: 33px;
   background: #ff4f4f;
   border-radius: 14px;
   color: white;
   border-color: #ff4f4f;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 17px;
 }
 
 section {
@@ -160,11 +208,11 @@ section {
 
 section .list-item {
   width: 20%;
-  margin: 50px 2.5%;
+  margin: 30px 2.5%;
 }
 
 section .list-item .item-content {
-  width: 280px;
+  width: 240px;
 }
 
 section .list-item .item-info {
@@ -185,10 +233,10 @@ section .list-item .tags-and-check {
 }
 
 .tags-and-check div label {
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
   border: 1.4px solid #000;
-  border-radius: 8.5px;
+  border-radius: 8px;
   box-sizing: border-box;
   cursor: pointer;
 }
