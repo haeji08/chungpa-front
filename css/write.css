@@ -206,10 +206,6 @@ select {
     filter: drop-shadow(-2px 4px 15px rgba(0, 7, 69, 0.15));
 }
 
-.image input{
-    padding-right: 600px;
-}
-
 .info-container .category{
     position: relative;
     padding-left: 180px;
