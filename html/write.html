@@ -9,7 +9,7 @@
 <body>
     <header class="header">
       <h1>
-        <a href="">
+        <a href="../html/login.html">
             <img src="../image/로고3 2.png" width="66" 
             height="60" alt="로고이미지"/>청파마켓</a>
       </h1>
@@ -61,11 +61,21 @@
     <main>
       <form action="">        
         <div class="info-container">
-              <div class="type-container">
-                  <button type="button">팔아요</button>
-                  <button type="button">살래요</button>
-                  <button type="button">나눠요</button>
-              </div> 
+              <ul class="type-container">
+                <li>
+                  <input type="radio" name="type" id="sell"
+                  checked="checked">
+                  <label for="sell">팔아요</label>
+                </li>
+                <li>
+                  <input type="radio" name="type" id="buy">
+                  <label for="buy">살래요</label>
+                </li>
+                <li>
+                  <input type="radio" name="type" id="share">
+                  <label for="share">나눠요</label>
+                </li>
+              </ul> 
               <div class="title">
                   <label for="title">제목</label>
                   <input type="text" name="title" id="title">
@@ -82,6 +92,7 @@
                   </select>
                   <input type="text" name="price" id="price"
                   placeholder="   희망 가격(선택 사항)">
+              
                   <div class="checkbox">
                       <input type="checkbox" name="checkbox" id="checkbox">
                       <label for="checkbox">가격 제안 받기</label>
@@ -106,22 +117,24 @@
               <div class="line" id="line4"></div>
 
               <div class="transaction-way">
-                  <label for="">희망 거래 방식</label> 
+                  <div id="transaction-way">희망 거래 방식</div> 
                   <div class="direct">
-                      <input type="radio" name="gener" id="direct">
+                      <input type="checkbox" id="direct">
                       <label for="direct">직거래</label>
                   </div>
 
                   <div class="deliver">
-                      <input type="radio" name="gener" id="deliver">
+                      <input type="checkbox" id="deliver">
                       <label for="deliver">택배 거래</label>
                   </div>
 
                   <div class="locker">
-                      <input type="radio" name="gener" id="locker">
+                      <input type="checkbox" id="locker">
                       <label for="locker">사물함 거래</label>
                   </div>
               </div>
+              
+              <div class="line" id="line5"></div>
 
               <div class="transaction-area">
                   <label for="area">거래 가능 지역</label>
