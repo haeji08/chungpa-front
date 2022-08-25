@@ -45,7 +45,7 @@
                     <label for="birth">생년월일</label>
                     <div class="radio">
                         <label for="solar">양력</label>
-                        <input type="radio" name="gener" id="solar">
+                        <input type="radio" name="gener" id="solar" checked>
                         <label for="lunar">음력</label>
                         <input type="radio" name= "gener" id="lunar">
                     </div>
@@ -173,10 +173,12 @@
                 <div class="phone-number">
                     <label for="phone-number">휴대폰번호</label>
                     <input type="text"
-                    name="phone-number"
-                    id="phone-number">
-                    <input type="checkbox" name="checkbox"
-                    id="checkbox" class="checkbox">인증
+                    name="phone-number" id="phone-number">
+
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1" style="padding-left: 30px; padding-top: 3px;">인증</label>
+                    </div>
                 </div>
 
                 <div class="verification-code">
@@ -184,8 +186,11 @@
                     <input type="text" 
                     name="verification-code" 
                     id="verification-code">
-                    <input type="checkbox" name="checkbox"
-                    id="checkbox" class="checkbox">인증 확인
+                    
+                    <div class="checkbox" style="left: 750px;">
+                        <input type="checkbox" id="checkbox2">
+                        <label for="checkbox2" style="padding-left: 30px; padding-top: 3px;">인증번호 확인</label>
+                    </div>
                 </div>
                 
                 <div class="line" id="line3"></div>

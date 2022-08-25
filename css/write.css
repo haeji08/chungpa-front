@@ -200,6 +200,14 @@ main{
     border: 0.5px solid #001F7B;
 }
 
+.image img{
+    padding-right: 600px;
+}
+
+.image input{
+    display: none;
+}
+
 select {
     width: 210px;
     height: 44px;
@@ -236,6 +244,7 @@ input[type="checkbox"] {
 input[type=checkbox]+label {
     cursor: pointer;
     padding-left: 23px;
+    color: #B5B5B5;
     background-repeat: no-repeat;
     background-image: url('../image/check-off.png');
 }
@@ -248,10 +257,12 @@ input[type=checkbox]:checked+label {
 
 input[type=checkbox]:disabled+label {
     background-image: url('../image/check-off.png');
+    color: #B5B5B5;
+    font-weight: 400;
 }
 
 .transaction-way{
-    margin-right: 180px;
+    padding-right: 250px;
 }
 
 .transaction-way div{
@@ -273,15 +284,15 @@ input[type=checkbox]:disabled+label {
     display: block;
     align-items: center;
     box-sizing: border-box;
-    width: 135px;
-    height: 61.36px;
-    color: #FFFFFF;
-    font-size: 28px;
+    width: 130px;
+    height: 60px;
+    color: white;
     font-weight: 700;
+    font-size: 28px;
     background: #0035D3;
     border-radius: 17px;
 }
 
-.btn-container button:hover{
+.btn-container button:hover {
     background: #001f7b;
 }
