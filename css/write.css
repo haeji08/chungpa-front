@@ -35,9 +35,6 @@ button {
 .line {
     border-bottom: 0.5px solid;
     border-color: black;
-}
-
-#line1 {
     border-color: #c2c2c2;
 }
 
